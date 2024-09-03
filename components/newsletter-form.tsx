@@ -35,7 +35,7 @@ export default function NewsletterForm() {
       return
     }
 
-    toast.success('Subscribed successfully!')
+    toast.success('Sumitted successfully!')
     reset()
   }
 
@@ -77,17 +77,8 @@ export default function NewsletterForm() {
                 disabled={isSubmitting}
                 className='w-full disabled:opacity-50'
               >
-                {isSubmitting ? 'Submitting...' : 'Subscribe'}
+                {isSubmitting ? 'Submitting...' : 'Submit'}
               </Button>
-            </div>
-
-            <div>
-              <p className='text-xs text-muted-foreground'>
-                We care about your data. Read our{' '}
-                <Link href='/privacy' className='font-bold'>
-                  privacy&nbsp;policy.
-                </Link>
-              </p>
             </div>
           </form>
         </CardContent>

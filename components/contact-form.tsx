@@ -140,15 +140,9 @@ export default function ContactForm() {
               disabled={isSubmitting}
               className='w-full disabled:opacity-50'
             >
-              {isSubmitting ? 'Submitting...' : 'Contact Us'}
+              {isSubmitting ? 'Submitting...' : 'Submit'}
             </Button>
           </div>
-          <p className='mt-4 text-xs text-muted-foreground'>
-            By submitting this form, I agree to the{' '}
-            <Link href='/privacy' className='font-bold'>
-              privacy&nbsp;policy.
-            </Link>
-          </p>
         </form>
       </div>
     </section>

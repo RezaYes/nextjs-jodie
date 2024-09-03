@@ -51,7 +51,7 @@ export async function subscribe(data: NewsletterFormInputs) {
     })
 
     if (!data || error) {
-      throw new Error('Failed to subscribe')
+      throw new Error('Failed to submit')
     }
 
     // TODO: Send a welcome email
